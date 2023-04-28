@@ -121,8 +121,8 @@
         padding: 20px;
 }
     article.cv img {
-
         object-fit: contain;
+        width: 370px;
 }
     aside.cv {
         display: flex;
@@ -317,7 +317,7 @@
         justify-content: space-evenly;
 }
     nav ul li {
-        padding: 5px 15px;
+        padding: 5px;
         display: flex;
         list-style-type: none;
         font-size: 20px;
