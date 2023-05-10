@@ -1,0 +1,153 @@
+@media screen and (max-width: 730px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: #50A8EB;
+        justify-content: space-around;
+        flex-basis: 100vw;
+        font-weight: bold;
+    }
+    h2.logo {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 10px #455A6B;
+    }
+    h2 span {
+        color: #3E83B8;
+        text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+        padding: 0 10px;
+    }
+    h2.logo:hover {
+        color: #3E83B8;
+        text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+        transition: all 0.2s;
+    }
+    h2 span:hover {
+        color: #fff;
+        text-shadow: 2px 2px 10px #455A6B;
+        transition: all 0.2s;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    nav ul li {
+        padding: 5px 15px;
+        display: flex;
+        list-style-type: none;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #455A6B;
+        font-weight: lighter;
+    }
+    }
+    @media screen and (min-width: 730px) and (max-width: 991px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: #50A8EB;
+        justify-content: space-around;
+        flex-basis: 100vw;
+        font-weight: bold;
+    }
+    h2.logo {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        font-size: 50px;
+        color: #fff;
+        text-shadow: 2px 2px 10px #455A6B;
+    }
+    h2 span {
+        color: #3E83B8;
+        text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+        padding: 0 10px;
+    }
+    h2.logo:hover {
+        color: #3E83B8;
+        text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+        transition: all 0.2s;
+    }
+    h2 span:hover {
+        color: #fff;
+        text-shadow: 2px 2px 10px #455A6B;
+        transition: all 0.2s;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    nav ul li {
+        padding: 5px;
+        display: flex;
+        list-style-type: none;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #455A6B;
+        font-weight: lighter;
+    }
+    #navbarNav {
+        justify-content: flex-end;
+    }
+    }
+    @media screen and (min-width: 992px) {
+    header {
+        display: flex;
+        /* background-color: #50A8EB; */
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    h2.logo {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        font-size: 50px;
+        color: #fff;
+        text-shadow: 2px 2px 10px #455A6B;
+    }
+    h2 span {
+        color: #3E83B8;
+        text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+        padding: 0 10px;
+    }
+    h2.logo:hover {
+        color: #3E83B8;
+        text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+        transition: all 0.2s;
+    }
+    h2 span:hover {
+        color: #fff;
+        text-shadow: 2px 2px 10px #455A6B;
+        transition: all 0.2s;
+    }
+    nav {
+        display: flex;
+        width: 100vw;
+    }
+    .navbar-brand {
+        display: flex;
+        padding-left: 2em;
+    }
+    #navbarNav {
+        justify-content: flex-end;
+    }
+    nav ul li {
+        padding: 20px;
+        display: flex;
+        list-style-type: none;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #455A6B;
+        font-weight: lighter;
+    }
+    }
