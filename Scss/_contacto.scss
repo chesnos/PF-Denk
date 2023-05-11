@@ -1,167 +1,169 @@
-@media screen and (max-width: 730px) {
-    article.contacto {
+article.contacto {
+    @include mobile {
         display: flex;
         align-items: center;
         justify-content: center;
-}    
-    .contacto__form {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0;
-        
+    
+        .contacto__form {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            
+        }
+        .contacto__form .item {	
+            border: 2px solid black;
+            background: white;
+            font-size: 20px;
+            border-width: 4px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            color: #3E83B8;
+            transition: all .2s;
+            min-width: 280px;
+            margin: 10px 0;
+        }
+        .contacto__form .item:nth-child(4) {
+            font-size: 20px;
+            border-width: 4px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            color: #3E83B8;
+        }
+        .contacto__form .item:last-child {
+            font-size: 20px;
+            border-width: 4px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            background: #3E83B8;
+            color: #fff;
+        }   
+        .contacto__form .item:last-child:hover {
+            background: #455A6B;
+            color: #fff;
+            transition: all .2s;
+            border-color: #fff;
+            transform: scale(1.03);
+        }
+        .contacto__form .item:focus{
+            outline-color: #fff9;
+            transform: scale(1.03);
+            transform: all .2s;
+        } 
+    }       
 }
-    .contacto__form .item {	
-        border: 2px solid black;
-        background: white;
-        font-size: 20px;
-        border-width: 4px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        color: #3E83B8;
-        transition: all .2s;
-        min-width: 280px;
-        margin: 10px 0;
-}
-    .contacto__form .item:nth-child(4) {
-        font-size: 20px;
-        border-width: 4px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        color: #3E83B8;
-}
-    .contacto__form .item:last-child {
-        font-size: 20px;
-        border-width: 4px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        background: #3E83B8;
-        color: #fff;
-}
-    .contacto__form .item:last-child:hover {
-        background: #455A6B;
-        color: #fff;
-        transition: all .2s;
-        border-color: #fff;
-        transform: scale(1.03);
-}
-    .contacto__form .item:focus{
-        outline-color: #fff9;
-        transform: scale(1.03);
-        transform: all .2s;
-}    
-}
-@media screen and (min-width: 730px) and (max-width: 991px) {
-    article.contacto {
+article.contacto {
+    @include tablet {
         display: flex;
         grid-column: 1 / 13;
         grid-row: 3 / 9;
         justify-content: center;
-}     
-    .contacto__form {
-        display: grid;
-        grid-template-columns: .5fr 1fr;
-        grid-template-rows: repeat(3, 2fr) 2.5fr; 
-        grid-gap: 120px;
+        
+        .contacto__form {
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            grid-template-rows: repeat(3, 2fr) 2.5fr; 
+            grid-gap: 120px;
+        }
+        .contacto__form .item {	
+            border: 2px solid black;
+            background: white;
+            font-size: 25px;
+            border-width: 8px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            color: #3E83B8;
+            transition: all .2s;
+        }
+        .contacto__form .item:nth-child(4) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 5;
+            font-size: 25px;
+            border-width: 8px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            color: #3E83B8;
+        }
+        .contacto__form .item:last-child {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+            font-size: 25px;
+            border-width: 8px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            background: #3E83B8;
+            color: #fff;
+        }   
+        .contacto__form .item:last-child:hover {
+            background: #455A6B;
+            color: #fff;
+            transition: all .2s;
+            border-color: #fff;
+            transform: scale(1.03);
+        }
+        .contacto__form .item:focus{
+            outline-color: #fff9;
+            transform: scale(1.03);
+            transform: all .2s;
+        }
+    }
 }
-    .contacto__form .item {	
-        border: 2px solid black;
-        background: white;
-        font-size: 25px;
-        border-width: 8px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        color: #3E83B8;
-        transition: all .2s;
-}
-    .contacto__form .item:nth-child(4) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 5;
-        font-size: 25px;
-        border-width: 8px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        color: #3E83B8;
-}
-    .contacto__form .item:last-child {
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
-        font-size: 25px;
-        border-width: 8px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        background: #3E83B8;
-        color: #fff;
-}
-    .contacto__form .item:last-child:hover {
-        background: #455A6B;
-        color: #fff;
-        transition: all .2s;
-        border-color: #fff;
-        transform: scale(1.03);
-}
-    .contacto__form .item:focus{
-        outline-color: #fff9;
-        transform: scale(1.03);
-        transform: all .2s;
-}
-}
-@media screen and (min-width: 992px) {
-    article.contacto {
+article.contacto {
+    @include desktop {
         display: flex;
         grid-column: 1 / 13;
         grid-row: 2 / 8;
         justify-content: center;
-}     
-    .contacto__form {
-
-        display: grid;
-        grid-template-columns: 1fr 1.2fr;
-        grid-template-rows: repeat(3, .2fr) .4fr;
-        padding: 50px;
-        grid-gap: 100px;
-        align-content: center;
-        justify-content: center;
-}
-    .contacto__form .item {	
-        border: 2px solid black;
-        background: white;
-        font-size: 25px;
-        border-width: 8px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        color: #3E83B8;
-        transition: all .2s;
-}
-    .contacto__form .item:nth-child(4) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 5;
-        font-size: 25px;
-        border-width: 8px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        color: #3E83B8;
-}
-    .contacto__form .item:last-child {
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
-        font-size: 25px;
-        margin-top: 20px;
-        border-width: 8px;
-        border-color: #50A8EB;
-        border-radius: 10px;
-        background: #3E83B8;
-        color: #fff;
-}
-    .contacto__form .item:last-child:hover {
-        background: #455A6B;
-        color: #fff;
-        transition: all .2s;
-        border-color: #fff;
-        transform: scale(1.03);
-}
-    .contacto__form .item:focus{
-        outline-color: #fff9;
-        transform: scale(1.03);
-        transform: all .2s;
-}
+        
+        .contacto__form {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            grid-template-rows: repeat(3, .2fr) .4fr;
+            padding: 50px;
+            grid-gap: 100px;
+            align-content: center;
+            justify-content: center;
+        }
+        .contacto__form .item {	
+            border: 2px solid black;
+            background: white;
+            font-size: 25px;
+            border-width: 8px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            color: #3E83B8;
+            transition: all .2s;
+        }
+        .contacto__form .item:nth-child(4) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 5;
+            font-size: 25px;
+            border-width: 8px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            color: #3E83B8;
+        }
+        .contacto__form .item:last-child {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+            font-size: 25px;
+            margin-top: 20px;
+            border-width: 8px;
+            border-color: #50A8EB;
+            border-radius: 10px;
+            background: #3E83B8;
+            color: #fff;
+        }
+        .contacto__form .item:last-child:hover {
+            background: #455A6B;
+            color: #fff;
+            transition: all .2s;
+            border-color: #fff;
+            transform: scale(1.03);
+        }
+        .contacto__form .item:focus{
+            outline-color: #fff9;
+            transform: scale(1.03);
+            transform: all .2s;
+        }
+    }    
 }

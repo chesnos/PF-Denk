@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+@import "media-queries";
 @import "a-tag";
 @import "background";
 @import "contacto";
@@ -12,6 +13,7 @@
 @import "h1";
 @import "header";
 @import "home";
+@import "navbar";
 @import "proyectos";
 @import "servicios";
 

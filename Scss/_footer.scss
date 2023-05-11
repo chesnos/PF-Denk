@@ -1,81 +1,76 @@
-@media screen and (max-width: 730px) {
-    footer {
+footer {
+    @include mobile {
         background-color: #3E83B8;
         text-align: center;
-    }
-    footer ul {
-        display: inline-block;
-        list-style-type: none;
-        font-size: 15px;
-        padding: 10px;
-    }
-    footer ul li {
-        display: inline-block;
-        padding: 10px 25px;
-    }
-    footer ul a {
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 2px 2px #455A6B;
-        transition: all 0.2s;
-        transition: outline 0s;
+        
+        ul {
+            display: inline-block;
+            list-style-type: none;
+            font-size: 15px;
+            padding: 10px;
+        }
+        ul li {
+            display: inline-block;
+            padding: 10px 25px;
+        }
+        ul a {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px #455A6B;
+            transition: all 0.2s;
+            transition: outline 0s;
+        }
     }
 }
-
-@media screen and (min-width: 730px) and (max-width: 991px) {
-    footer {
+footer {
+    @include tablet {
         background-color: #3E83B8;
         text-align: center;
         grid-column: 1/13;
         grid-row: 10/11;
-    }
-
-    footer ul {
-        display: inline-block;
-        list-style-type: none;
-        font-size: 15px;
-        padding: 10px;
-    }
-
-    footer ul li {
-        display: inline-block;
-        padding: 10px 40px;
-    }
-
-    footer ul a {
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 2px 2px #455A6B;
-        transition: all 0.2s;
-        transition: outline 0s;
+        
+        ul {
+            display: inline-block;
+            list-style-type: none;
+            font-size: 15px;
+            padding: 10px;
+        }
+        ul li {
+            display: inline-block;
+            padding: 10px 40px;
+        }
+        ul a {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px #455A6B;
+            transition: all 0.2s;
+            transition: outline 0s;
+        }
     }
 }
-
-@media screen and (min-width: 992px) {
-    footer {
+footer {
+    @include desktop {
         background-color: #3E83B8;
         text-align: center;
         grid-column: 1/13;
         grid-row: 8/9;
-    }
-
-    footer ul {
-        display: inline-block;
-        list-style-type: none;
-        font-size: 15px;
-        padding: 10px;
-    }
-
-    footer ul li {
-        display: inline-block;
-        padding: 10px 70px;
-    }
-
-    footer ul a {
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 2px 2px #455A6B;
-        transition: all 0.2s;
-        transition: outline 0s;
+        
+        ul {
+            display: inline-block;
+            list-style-type: none;
+            font-size: 15px;
+            padding: 10px;
+        }
+        ul li {
+            display: inline-block;
+            padding: 10px 70px;
+        }
+        ul a {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px #455A6B;
+            transition: all 0.2s;
+            transition: outline 0s;
+        }
     }
 }

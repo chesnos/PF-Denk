@@ -1,5 +1,5 @@
-@media screen and (max-width: 730px) {
-    h1 {
+h1 {
+    @include mobile {
         display: flex;
         justify-content: center;
         text-align: center;
@@ -9,9 +9,9 @@
         color: #eee;
         text-shadow: 0px 0px 4px lightblue;
     }
-    }
-    @media screen and (min-width: 730px) and (max-width: 991px) {
-    h1 {
+}
+h1 {
+    @include tablet {
         display: flex;
         grid-column: 1/13;
         grid-row: 1/2;
@@ -23,9 +23,9 @@
         color: #eee;
         text-shadow: 0px 0px 4px lightblue;
     }
-    }
-    @media screen and (min-width: 992px) {
-    h1 {
+}    
+h1 {
+    @include desktop {
         display: flex;
         grid-column: 1/13;
         grid-row: 1/2;
@@ -37,4 +37,4 @@
         color: #eee;
         text-shadow: 0px 0px 4px lightblue;
     }
-    }
+}

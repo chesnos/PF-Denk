@@ -1,5 +1,5 @@
-@media screen and (max-width: 730px) {
-    .background {
+.background {
+    @include mobile {
         display: flex;
         flex-direction: column;
         background-color: #455A6B;
@@ -8,9 +8,9 @@
         font-size: 20px;
         flex-basis: 100vw;
     }
-    }
-    @media screen and (min-width: 730px) and (max-width: 991px) {
-    .background {
+}
+.background {
+    @include tablet {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 0.3fr repeat(8, 1fr) 0.2fr;
@@ -20,9 +20,9 @@
         font-size: 20px;
         flex-basis: 100vw;
     }
-    }
-    @media screen and (min-width: 992px) {
-    .background {
+}
+.background {
+    @include desktop {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 0.3fr repeat(6, 1fr) 0.2fr;
@@ -32,4 +32,4 @@
         font-size: 20px;
         min-height: 100vh;
     }
-    }
+}

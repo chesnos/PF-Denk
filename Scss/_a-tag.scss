@@ -1,45 +1,14 @@
-@media screen and (max-width: 730px) {
-    a {
-            color: white;
-            transition: all 0.2s;
-            transition: outline 0s;
-        }
-        a:hover {
-            text-decoration: none;
-            color: #455A6B;
-            transition: all 0.2s;
-        }
-        a:focus {
-            outline-color: rgba(255, 255, 255, 0.6);
-        }
-    }
-@media screen and (min-width: 730px) and (max-width: 991px) {
-        a {
-            color: white;
-            transition: all 0.2s;
-            transition: outline 0s;
-        }
-        a:hover {
-            text-decoration: none;
-            color: #455A6B;
-            transition: all 0.2s;
-        }
-        a:focus {
-            outline-color: rgba(255, 255, 255, 0.6);
-        }
-    }
-@media screen and (min-width: 992px) {
-        a {
-            color: white;
-            transition: all 0.2s;
-            transition: outline 0s;
-        }
-        a:hover {
-            text-decoration: none;
-            color: #455A6B;
-            transition: all 0.2s;
-        }
-        a:focus {
-            outline-color: rgba(255, 255, 255, 0.6);
-        }
-    }
+a {
+    color: #fff;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #455A6B;
+    transition: color 0.2s;
+}
+
+a:focus {
+    outline-color: rgba(255, 255, 255, 0.6);
+}
