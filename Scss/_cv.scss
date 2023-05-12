@@ -4,22 +4,27 @@ main.cv {
             display: flex;
             justify-content: center;
             padding: 20px;
-        }
-        article.cv img {
-            object-fit: contain;
-            min-width: 300px;
-        }
+        
+            img {
+                object-fit: contain;
+                min-width: 300px;
+            }
+        }    
         aside.cv {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
             padding: 20px;
-        }
-        aside.cv p{
-            display: flex;
-            max-width: 400px;
-            padding: 20px;
+        
+            p {
+                display: flex;
+                max-width: 400px;
+                padding: 20px;
+                font-size: 20px;
+                color: #98C8ED;
+                font-family: "Balthazar", serif;
+            }    
         }   
     }
 }
@@ -30,11 +35,12 @@ main.cv {
             justify-content: center;
             grid-column: 1 / 13;
             grid-row: 2 / 6;
-        }
-        article.cv img {
-            object-fit: contain;
-            max-width: 500px;
-        }
+        
+            img {
+                object-fit: contain;
+                max-width: 500px;
+            }
+        }    
         aside.cv {
             display: flex;
             grid-column: 1 / 13;
@@ -42,12 +48,15 @@ main.cv {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-        }
-        aside.cv p{
-            display: flex;
-            font-size: 1.3em;
-            max-width: 400px;
-            padding: 20px;
+        
+            p {
+                display: flex;
+                font-size: 1.3em;
+                color: #98C8ED;
+                font-family: "Balthazar", serif;
+                max-width: 400px;
+                padding: 20px;
+            }    
         }
     }       
 }
@@ -70,10 +79,14 @@ main.cv {
             align-items: center;
             padding: 20px;
             flex-grow: 1;
-        }
-        aside.cv p{
-            display: flex;
-            max-width: 400px;
-        }
+            
+            p {
+                display: flex;
+                max-width: 400px;
+                font-size: 20px;
+                color: #98C8ED;
+                font-family: "Balthazar", serif;
+            }
+        }    
     }
 }

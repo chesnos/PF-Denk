@@ -5,17 +5,24 @@
   box-sizing: border-box;
 }
 
+h1 {
+  margin-top: 0.5em;
+  font-weight: 400;
+  text-align: center;
+  color: #eee;
+  font-family: "Balthazar", serif;
+  text-shadow: 0px 0px 4px lightblue;
+}
+
 a {
   color: #fff;
   transition: color 0.2s;
 }
-
 a:hover {
   text-decoration: none;
   color: #455A6B;
   transition: color 0.2s;
 }
-
 a:focus {
   outline-color: rgba(255, 255, 255, 0.6);
 }
@@ -25,9 +32,6 @@ a:focus {
     display: flex;
     flex-direction: column;
     background-color: #455A6B;
-    font-family: "Balthazar", serif;
-    color: #98C8ED;
-    font-size: 20px;
     flex-basis: 100vw;
   }
 }
@@ -38,9 +42,6 @@ a:focus {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 0.3fr repeat(8, 1fr) 0.2fr;
     background-color: #455A6B;
-    font-family: "Balthazar", serif;
-    color: #98C8ED;
-    font-size: 20px;
     flex-basis: 100vw;
   }
 }
@@ -51,9 +52,6 @@ a:focus {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 0.3fr repeat(6, 1fr) 0.2fr;
     background-color: #455A6B;
-    font-family: "Balthazar", serif;
-    color: #98C8ED;
-    font-size: 20px;
     min-height: 100vh;
   }
 }
@@ -77,6 +75,7 @@ a:focus {
     border-color: #50A8EB;
     border-radius: 10px;
     color: #3E83B8;
+    font-family: "Balthazar", serif;
     transition: all 0.2s;
     min-width: 280px;
     margin: 10px 0;
@@ -131,6 +130,7 @@ a:focus {
     border-color: #50A8EB;
     border-radius: 10px;
     color: #3E83B8;
+    font-family: "Balthazar", serif;
     transition: all 0.2s;
   }
   article.contacto .contacto__form .item:nth-child(4) {
@@ -190,6 +190,7 @@ a:focus {
     border-color: #50A8EB;
     border-radius: 10px;
     color: #3E83B8;
+    font-family: "Balthazar", serif;
     transition: all 0.2s;
   }
   article.contacto .contacto__form .item:nth-child(4) {
@@ -247,6 +248,9 @@ a:focus {
     display: flex;
     max-width: 400px;
     padding: 20px;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
   }
 }
 
@@ -272,6 +276,8 @@ a:focus {
   main.cv aside.cv p {
     display: flex;
     font-size: 1.3em;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
     max-width: 400px;
     padding: 20px;
   }
@@ -299,6 +305,9 @@ a:focus {
   main.cv aside.cv p {
     display: flex;
     max-width: 400px;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
   }
 }
 
@@ -382,42 +391,25 @@ a:focus {
   h1 {
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-weight: 400;
     font-size: 2em;
-    margin-top: 0.5em;
-    color: #eee;
-    text-shadow: 0px 0px 4px lightblue;
   }
 }
-
 @media screen and (min-width: 730px) and (max-width: 991px) {
   h1 {
     display: flex;
     grid-column: 1/13;
     grid-row: 1/2;
     justify-content: center;
-    text-align: center;
-    font-weight: 400;
     font-size: 2.5em;
-    margin-top: 0.5em;
-    color: #eee;
-    text-shadow: 0px 0px 4px lightblue;
   }
 }
-
 @media screen and (min-width: 992px) {
   h1 {
     display: flex;
     grid-column: 1/13;
     grid-row: 1/2;
     justify-content: center;
-    text-align: center;
-    font-weight: 400;
-    font-size: 2.5em;
-    margin-top: 0.5em;
-    color: #eee;
-    text-shadow: 0px 0px 4px lightblue;
+    font-size: 3em;
   }
 }
 
@@ -426,6 +418,7 @@ a:focus {
     display: flex;
     flex-direction: column;
     background-color: #50A8EB;
+    font-family: "Balthazar", serif;
     justify-content: space-around;
     flex-basis: 100vw;
     font-weight: bold;
@@ -434,19 +427,19 @@ a:focus {
     display: flex;
     justify-content: center;
     padding: 5px;
-    font-size: 40px;
+    font-size: 45px;
     color: #fff;
     text-shadow: 2px 2px 10px #455A6B;
-  }
-  header h2 span {
-    color: #3E83B8;
-    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
-    padding: 0 10px;
   }
   header h2.logo:hover {
     color: #3E83B8;
     text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
     transition: all 0.2s;
+  }
+  header h2 span {
+    color: #3E83B8;
+    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+    padding: 0 9px;
   }
   header h2 span:hover {
     color: #fff;
@@ -460,6 +453,7 @@ a:focus {
     display: flex;
     flex-direction: column;
     background-color: #50A8EB;
+    font-family: "Balthazar", serif;
     justify-content: space-around;
     flex-basis: 100vw;
     font-weight: bold;
@@ -468,19 +462,19 @@ a:focus {
     display: flex;
     justify-content: center;
     padding: 5px;
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
     text-shadow: 2px 2px 10px #455A6B;
-  }
-  header h2 span {
-    color: #3E83B8;
-    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
-    padding: 0 10px;
   }
   header h2.logo:hover {
     color: #3E83B8;
     text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
     transition: all 0.2s;
+  }
+  header h2 span {
+    color: #3E83B8;
+    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+    padding: 0 9px;
   }
   header h2 span:hover {
     color: #fff;
@@ -493,6 +487,7 @@ a:focus {
   header {
     display: flex;
     background-color: #50A8EB;
+    font-family: "Balthazar", serif;
     justify-content: space-between;
     font-weight: bold;
   }
@@ -500,19 +495,19 @@ a:focus {
     display: flex;
     justify-content: center;
     padding: 5px;
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
     text-shadow: 2px 2px 10px #455A6B;
-  }
-  header h2 span {
-    color: #3E83B8;
-    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
-    padding: 0 10px;
   }
   header h2.logo:hover {
     color: #3E83B8;
     text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
     transition: all 0.2s;
+  }
+  header h2 span {
+    color: #3E83B8;
+    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+    padding: 0 9px;
   }
   header h2 span:hover {
     color: #fff;
@@ -548,6 +543,7 @@ a:focus {
     align-items: center;
     text-align: center;
     color: #98C8ED;
+    font-family: "Balthazar", serif;
     font-size: 1.2em;
     padding: 20px 0;
     width: 80vw;
@@ -586,6 +582,7 @@ a:focus {
     align-items: center;
     text-align: center;
     color: #98C8ED;
+    font-family: "Balthazar", serif;
     font-size: 1.2em;
     width: 60vw;
   }
@@ -621,6 +618,7 @@ a:focus {
     display: flex;
     align-items: center;
     color: #98C8ED;
+    font-family: "Balthazar", serif;
     font-size: 1.2em;
     margin: 30px;
   }
@@ -700,12 +698,15 @@ a:focus {
   .proyectos iframe {
     display: flex;
     padding: 30px 0;
-    width: 95vw;
+    width: 93vw;
   }
   .proyectos p {
     display: flex;
     text-align: center;
     padding: 10px;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
   }
 }
 
@@ -720,11 +721,14 @@ a:focus {
   }
   .proyectos iframe {
     display: flex;
-    width: 95vw;
+    width: 93vw;
   }
   .proyectos p {
     display: flex;
     width: 80vw;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
     text-align: center;
   }
 }
@@ -740,11 +744,14 @@ a:focus {
   }
   .proyectos iframe {
     display: flex;
-    width: 95vw;
+    width: 93vw;
   }
   .proyectos p {
     display: flex;
     width: 80vw;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
     text-align: center;
   }
 }
@@ -753,6 +760,9 @@ a:focus {
   article.servicios {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
   }
   article.servicios div.img__1 {
     display: flex;
@@ -769,7 +779,7 @@ a:focus {
   article.servicios div.servicios__img img {
     display: flex;
     object-fit: contain;
-    width: 95vw;
+    width: 93vw;
   }
   article.servicios div.servicios__h2 {
     display: flex;
@@ -785,6 +795,9 @@ a:focus {
     grid-row: 2/10;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 5fr 1fr 5fr 1fr;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
   }
   article.servicios div.img__1 {
     display: flex;
@@ -836,6 +849,9 @@ a:focus {
     grid-row: 2/8;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 0.5fr;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
   }
   article.servicios div.img__1 {
     display: flex;

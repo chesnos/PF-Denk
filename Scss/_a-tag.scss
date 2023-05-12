@@ -1,14 +1,13 @@
 a {
     color: #fff;
     transition: color 0.2s;
-}
 
-a:hover {
-    text-decoration: none;
-    color: #455A6B;
-    transition: color 0.2s;
-}
-
-a:focus {
-    outline-color: rgba(255, 255, 255, 0.6);
+    &:hover {
+        text-decoration: none;
+        color: #455A6B;
+        transition: color 0.2s;
+    }
+    &:focus {
+        outline-color: rgba(255, 255, 255, 0.6);
+    }
 }

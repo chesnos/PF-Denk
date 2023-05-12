@@ -8,12 +8,15 @@
         iframe {
             display: flex;
             padding: 30px 0;
-            width: 95vw;
-    }
+            width: 93vw;
+        }
         p {
             display: flex;
             text-align: center;
             padding: 10px;
+            font-size: 20px;
+            color: #98C8ED;
+            font-family: "Balthazar", serif;
         }    
     }
 }
@@ -28,11 +31,14 @@
 
         iframe {
         display: flex;
-        width: 95vw;
+        width: 93vw;
         }
         p {
         display: flex;
         width: 80vw;
+        font-size: 20px;
+        color: #98C8ED;
+        font-family: "Balthazar", serif;
         text-align: center;
         }
     }
@@ -49,11 +55,14 @@
         
         iframe {
             display: flex;
-            width: 95vw;
+            width: 93vw;
         }
         p {
             display: flex;
             width: 80vw;
+            font-size: 20px;
+            color: #98C8ED;
+            font-family: "Balthazar", serif;
             text-align: center;
         }
     }    
