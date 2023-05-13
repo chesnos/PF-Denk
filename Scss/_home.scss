@@ -1,4 +1,10 @@
-main.home {    
+main.home {   
+    aside.home p {
+        @extend %aside-home-p;
+    }
+    article.home div {
+        @extend %article-home-div;
+    }
     @include mobile {
         article.home {
             display: flex;
@@ -6,12 +12,7 @@ main.home {
             
             div {
                 display: flex;
-                background-color: white;
                 height: 200px;
-                margin: 30px;
-                padding: 5px;
-                border-radius: 50%;
-                box-shadow: 0px 0px 7px lightblue;
             
                 img {
                     border-radius: 50%;
@@ -27,16 +28,11 @@ main.home {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                color: #98C8ED;                
-                font-family: "Balthazar", serif;
-                font-size: 1.2em;
                 padding: 20px 0;
                 width: 80vw;
             }
         }    
-    }    
-}
-main.home {    
+    }   
     @include tablet {
         article.home {
             display: flex;
@@ -47,12 +43,7 @@ main.home {
         
             div {
                 display: flex;
-                background-color: white;
                 height: 300px;
-                padding: 5px;
-                margin: 30px;
-                border-radius: 50%;
-                box-shadow: 0px 0px 7px lightblue;
             
                 img {
                     border-radius: 50%;
@@ -70,15 +61,10 @@ main.home {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                color: #98C8ED;
-                font-family: "Balthazar", serif;
-                font-size: 1.2em;
                 width: 60vw;
             }
         }    
-    }
-}    
-main.home {    
+    }   
     @include desktop {
         article.home {
             display: flex;
@@ -89,13 +75,8 @@ main.home {
         
             div {
                 display: flex;
-                background-color: white;
                 align-content: center;
                 height: 60vh;
-                margin: 30px;
-                padding: 5px;
-                border-radius: 50%;
-                box-shadow: 0px 0px 7px lightblue;
             
                 img {
                     border-radius: 50%;
@@ -110,9 +91,6 @@ main.home {
             p {
                 display: flex;
                 align-items: center;
-                color: #98C8ED;
-                font-family: "Balthazar", serif;
-                font-size: 1.2em;
                 margin: 30px;
             }
         }    

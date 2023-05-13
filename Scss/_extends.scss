@@ -4,5 +4,110 @@
     text-align: center;
     color: #eee;
     font-family: "Balthazar", serif;
-    text-shadow: 0px 0px 4px lightblue;
+    text-shadow: 0px 0px 4px rgb(173, 216, 230);
+}
+%footer {
+    background-color: #3E83B8;
+    text-align: center;
+}
+%footer-ul {
+    list-style-type: none;
+    font-size: 30px;
+    padding: 10px;
+    text-shadow: 2px 2px 2px #455A6B;
+}
+%header {
+    background-color: #50A8EB;
+    font-family: "Balthazar", serif;
+    font-weight: bold;
+}
+%h2-logo {
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 10px #455A6B;
+    padding: 0 5px;
+}
+%h2-logo-hover {
+    color: #3E83B8;
+    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+    transition: all 0.2s;
+}
+%h2-span {
+    color: #3E83B8;
+    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+    padding: 0 9px;
+}
+%h2-span-hover {
+    color: #fff;
+    text-shadow: 2px 2px 10px #455A6B;
+    transition: all 0.2s;
+}
+%nav-ul-li {    
+    list-style-type: none;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #455A6B;
+    font-weight: lighter;
+}
+%form-item {
+    background: #fff;
+    border: 2px solid #000;
+    border-width: 8px;
+    border-color: #50A8EB;
+    border-radius: 10px;
+    color: #3E83B8;
+    font-family: "Balthazar", serif;
+    font-size: 25px;
+    transition: all .2s;
+}
+%form-item-focus {
+    outline-color: #fff9;
+    transform: scale(1.03);
+    transform: all .2s;
+}
+%form-last-item {
+    background: #3E83B8;
+    color: #fff;
+}
+%form-last-item-hover {
+    background: #455A6B;
+    color: #fff;
+    transition: all .2s;
+    border-color: #fff;
+    transform: scale(1.03);
+}
+%cv-aside-p {
+    max-width: 400px;
+    padding: 20px;
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
+}
+%proyectos-p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
+}
+%aside-home-p {
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
+    font-size: 1.2em;
+}
+%article-home-div {
+    background-color: #fff;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px rgb(173, 216, 230);
+}
+%article-servicios {
+    font-size: 20px;
+    color: #98C8ED;
+    font-family: "Balthazar", serif;
+}
+%article-servicios-img {
+    object-fit: contain;
+    border-radius: 10px;
+    border: 3px solid rgb(200, 200, 200, 5);
+    box-shadow: 0px 0px 10px rgb(173, 216, 230);
 }

@@ -1,5 +1,7 @@
-
 .proyectos {
+    p {
+        @extend %proyectos-p;
+    }
     @include mobile {
         display: flex;
         flex-direction: column;
@@ -12,15 +14,9 @@
         }
         p {
             display: flex;
-            text-align: center;
             padding: 10px;
-            font-size: 20px;
-            color: #98C8ED;
-            font-family: "Balthazar", serif;
         }    
     }
-}
-.proyectos {
     @include tablet {
         display: flex;
         flex-direction: column;
@@ -36,15 +32,8 @@
         p {
         display: flex;
         width: 80vw;
-        font-size: 20px;
-        color: #98C8ED;
-        font-family: "Balthazar", serif;
-        text-align: center;
         }
     }
-}
-
-.proyectos {
     @include desktop {
         display: flex;
         flex-direction: column;
@@ -60,10 +49,6 @@
         p {
             display: flex;
             width: 80vw;
-            font-size: 20px;
-            color: #98C8ED;
-            font-family: "Balthazar", serif;
-            text-align: center;
         }
     }    
 }

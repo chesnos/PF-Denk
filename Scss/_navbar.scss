@@ -1,4 +1,7 @@
 nav {
+    ul li {
+        @extend %nav-ul-li;
+    }
     @include mobile {
         display: flex;
         justify-content: center;
@@ -11,15 +14,9 @@ nav {
             li {
                 padding: 5px 15px;
                 display: flex;
-                list-style-type: none;
-                font-size: 20px;
-                text-shadow: 1px 1px 1px #455A6B;
-                font-weight: lighter;
             }
         }    
     }
-}
-nav {
     @include tablet {
         display: flex;
         justify-content: center;
@@ -32,18 +29,12 @@ nav {
             li {
                 padding: 5px;
                 display: flex;
-                list-style-type: none;
-                font-size: 20px;
-                text-shadow: 1px 1px 1px #455A6B;
-                font-weight: lighter;
             }
         }
         #navbarNav {
             justify-content: flex-end;
         }
     }
-}
-nav {
     @include desktop {
         display: flex;
         width: 100vw;
@@ -55,10 +46,6 @@ nav {
         ul li {
             padding: 20px;
             display: flex;
-            list-style-type: none;
-            font-size: 20px;
-            text-shadow: 1px 1px 1px #455A6B;
-            font-weight: lighter;
         }
         #navbarNav {
             justify-content: flex-end;

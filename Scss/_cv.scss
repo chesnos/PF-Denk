@@ -1,4 +1,9 @@
 main.cv {
+    aside.cv {
+        p {
+            @extend %cv-aside-p;
+        }
+    }
     @include mobile {
         article.cv {
             display: flex;
@@ -19,16 +24,9 @@ main.cv {
         
             p {
                 display: flex;
-                max-width: 400px;
-                padding: 20px;
-                font-size: 20px;
-                color: #98C8ED;
-                font-family: "Balthazar", serif;
             }    
         }   
     }
-}
-main.cv {
     @include tablet {
         article.cv {
             display: flex;
@@ -51,16 +49,9 @@ main.cv {
         
             p {
                 display: flex;
-                font-size: 1.3em;
-                color: #98C8ED;
-                font-family: "Balthazar", serif;
-                max-width: 400px;
-                padding: 20px;
             }    
         }
-    }       
-}
-main.cv {
+    }
     @include desktop {
         article.cv {
             display: flex;
@@ -82,10 +73,6 @@ main.cv {
             
             p {
                 display: flex;
-                max-width: 400px;
-                font-size: 20px;
-                color: #98C8ED;
-                font-family: "Balthazar", serif;
             }
         }    
     }
