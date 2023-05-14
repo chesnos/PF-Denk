@@ -122,6 +122,8 @@ main.home article.home div {
   padding: 5px;
   border-radius: 50%;
   box-shadow: 0px 0px 7px rgb(173, 216, 230);
+  animation: borderAnimation 6s infinite;
+  animation-timing-function: linear;
 }
 
 article.servicios {
@@ -177,6 +179,28 @@ a:focus {
   }
 }
 
+@keyframes borderAnimation {
+  0% {
+    box-shadow: 0px 0px 7px rgb(173, 216, 230);
+    background-color: #fff;
+  }
+  25% {
+    box-shadow: 0px 0px 7px #3E83B8;
+    background-color: #3E83B8;
+  }
+  50% {
+    box-shadow: 0px 0px 7px rgb(173, 216, 230);
+    background-color: #fff;
+  }
+  75% {
+    box-shadow: 0px 0px 7px #3E83B8;
+    background-color: #3E83B8;
+  }
+  100% {
+    box-shadow: 0px 0px 7px rgb(173, 216, 230);
+    background-color: #fff;
+  }
+}
 @media screen and (max-width: 730px) {
   article.contacto {
     display: flex;
