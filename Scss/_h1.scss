@@ -1,5 +1,7 @@
 h1 {
     @extend %h1;
+    padding: 20px 0;
+    background: #333;
     @include mobile {
         display: flex;
         justify-content: center;

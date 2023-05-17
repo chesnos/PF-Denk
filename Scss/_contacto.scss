@@ -33,14 +33,18 @@ article.contacto {
     @include tablet {
         display: flex;
         grid-column: 1 / 13;
-        grid-row: 3 / 9;
+        grid-row: 2 / 11;
         justify-content: center;
         
         .contacto__form {
             display: grid;
             grid-template-columns: .5fr 1fr;
             grid-template-rows: repeat(3, 2fr) 2.5fr; 
-            grid-gap: 120px;
+            //grid-gap: 120px;
+            padding: 50px;
+            grid-gap: 100px;
+            align-content: center;
+            justify-content: center;
         
             .item:nth-child(4) {
                 grid-column: 2 / 3;
@@ -55,7 +59,7 @@ article.contacto {
     @include desktop {
         display: flex;
         grid-column: 1 / 13;
-        grid-row: 2 / 8;
+        grid-row: 2 / 9;
         justify-content: center;
         
         .contacto__form {
