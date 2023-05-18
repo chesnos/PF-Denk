@@ -5,6 +5,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
 @import "media-queries";
+@import "variables";
 @import "extends";
 @import "a-tag";
 @import "background";
@@ -19,7 +20,5 @@
 @import "hobbies";
 @import "servicios";
 
-$color-fondo: #455A6B;
-$color-fondo-letra: #98C8ED;
-$color-barra: #50A8EB;
-$color-barra-letra: #fff;
+
+

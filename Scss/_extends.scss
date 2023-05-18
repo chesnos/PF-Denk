@@ -1,60 +1,60 @@
 %h1 {
     font-weight: 400;
     text-align: center;
-    color: #eee;
-    font-family: "Balthazar", serif;
-    text-shadow: 0px 0px 4px rgb(173, 216, 230);
+    color: $h1-letra-color;
+    font-family: $font-letra;
+    text-shadow: $h1-text-shadow;
 }
 %footer {
-    background-color: #3E83B8;
+    background-color: $footer-color-fondo;
     text-align: center;
 }
 %footer-ul {
     list-style-type: none;
-    font-size: 30px;
+    font-size: $footer-font-size;
     padding: 10px;
-    text-shadow: 2px 2px 2px #455A6B;
+    text-shadow: $footer-text-shadow;
 }
 %header {
-    background-color: #50A8EB;
-    font-family: "Balthazar", serif;
+    background-color: $header-color-fondo;
+    font-family: $font-letra;
     font-weight: bold;
 }
 %h2-logo {
     justify-content: center;
-    color: #fff;
-    text-shadow: 2px 2px 10px #455A6B;
+    color: $logo-color-letra;
+    text-shadow: $logo-text-shadow;
     padding: 0 5px;
 }
 %h2-logo-hover {
-    color: #3E83B8;
-    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+    color: $logo-hover-color;
+    text-shadow: $logo-hover-text-shadow;
     transition: all 0.2s;
 }
 %h2-span {
-    color: #3E83B8;
-    text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+    color: $logo-hover-color;
+    text-shadow: $logo-hover-text-shadow;
     padding: 0 9px;
 }
 %h2-span-hover {
-    color: #fff;
-    text-shadow: 2px 2px 10px #455A6B;
+    color: $logo-color-letra;
+    text-shadow: $logo-text-shadow;
     transition: all 0.2s;
 }
 %nav-ul-li {    
     list-style-type: none;
     font-size: 20px;
-    text-shadow: 1px 1px 1px #455A6B;
+    text-shadow: $nav-ul-li-text-shadow;
     font-weight: lighter;
 }
 %form-item {
-    background: #fff;
+    background: $form-background;
     border: 2px solid #000;
     border-width: 8px;
-    border-color: #50A8EB;
+    border-color: $navbar-color-fondo;
     border-radius: 10px;
-    color: #3E83B8;
-    font-family: "Balthazar", serif;
+    color: $footer-color-fondo;
+    font-family: $font-letra;
     font-size: 25px;
     transition: all .2s;
 }
@@ -64,50 +64,50 @@
     transform: all .2s;
 }
 %form-last-item {
-    background: #3E83B8;
-    color: #fff;
+    background: $footer-color-fondo;
+    color: $logo-color-letra;
 }
 %form-last-item-hover {
-    background: #455A6B;
-    color: #fff;
+    background: $background-color-fondo;
+    color: $logo-color-letra;
     transition: all .2s;
-    border-color: #fff;
+    border-color: $form-background;
     transform: scale(1.03);
 }
 %cv-aside-p {
     max-width: 400px;
     padding: 20px;
     font-size: 20px;
-    color: #98C8ED;
-    font-family: "Balthazar", serif;
+    color: $background-color-letra;
+    font-family: $font-letra;
 }
 %hobbies-p {
     text-align: center;
     font-size: 1.2em;
-    color: #98C8ED;
-    font-family: "Balthazar", serif;
+    color: $background-color-letra;
+    font-family: $font-letra;
 }
 %aside-home-p {
-    color: #98C8ED;
-    font-family: "Balthazar", serif;
+    color: $background-color-letra;
+    font-family: $font-letra;
 }
 %article-home-div {
-    background-color: #fff;
+    background-color: $form-background;
     margin: 30px;
     padding: 5px;
     border-radius: 50%;
-    box-shadow: 0px 0px 7px rgb(173, 216, 230);
+    box-shadow: $home-img-box-shadow;
     animation: borderAnimation 6s infinite;
     animation-timing-function: linear;
 }
 %article-servicios {
     font-size: 20px;
-    color: #98C8ED;
-    font-family: "Balthazar", serif;
+    color: $background-color-letra;
+    font-family: $font-letra;
 }
 %article-servicios-img {
     object-fit: contain;
     border-radius: 10px;
     border: 3px solid rgb(200, 200, 200, 5);
-    box-shadow: 0px 0px 10px rgb(173, 216, 230);
+    box-shadow: $servicios-img-box-shadow;
 }
