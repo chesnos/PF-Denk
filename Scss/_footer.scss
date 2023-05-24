@@ -1,36 +1,12 @@
 footer {
+    @extend %footer;
     ul {
         @extend %footer-ul;
-    }
-    @extend %footer;
-    @include mobile {
-        ul {
+        display: inline-block;
+
+        li {
             display: inline-block;
-        
-            li {
-                display: inline-block;
-                padding: 10px 25px;
-            }
-        }    
-    }
-    @include tablet {
-        ul {
-            display: inline-block;
-        
-            li {
-                display: inline-block;
-                padding: 10px 40px;
-            }
-        }    
-    }
-    @include desktop {
-        ul {
-            display: inline-block;
-            
-            li {
-                display: inline-block;
-                padding: 10px 70px;
-            }
-        }    
-    }
+            padding: 0 25px;
+        }
+    }    
 }
