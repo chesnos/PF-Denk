@@ -33,6 +33,7 @@ main.cv {
             justify-content: center;
             grid-column: 1 / 13;
             grid-row: 2 / 7;
+            padding-top: 20px;
         
             img {
                 object-fit: contain;
@@ -46,6 +47,7 @@ main.cv {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            padding: 20px 0;
         
             p {
                 display: flex;
@@ -59,7 +61,11 @@ main.cv {
             grid-row: 2 / 9;
             justify-content: center;
             padding: 20px 20px;
-            flex-grow: 4;
+            img {
+                object-fit: contain;
+                max-width: 500px;
+                min-width: 450px;
+            }
         }
         aside.cv {
             display: flex;
@@ -69,7 +75,6 @@ main.cv {
             justify-content: space-around;
             align-items: center;
             padding: 20px;
-            flex-grow: 1;
             
             p {
                 display: flex;

@@ -5,12 +5,55 @@
   box-sizing: border-box;
 }
 
-main.hobbies h3, main.hobbies h4, main.home h3, h1 {
+h1 {
   font-weight: 400;
   text-align: center;
   color: #eee;
   font-family: "Balthazar", serif;
   text-shadow: 0px 0px 4px rgb(173, 216, 230);
+}
+
+main.hobbies h3, main.hobbies h4, main.home h3 {
+  font-weight: 400;
+  text-align: center;
+  color: #eee;
+  font-family: "Balthazar", serif;
+  text-shadow: 0px 0px 4px rgb(173, 216, 230);
+  padding: 10px 0;
+  background: #333;
+  width: 100%;
+  font-size: 2.5em;
+}
+
+header h2.logo {
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 10px #455A6B;
+  padding: 0 5px;
+}
+
+header h2.logo:hover {
+  color: #455A6B;
+  text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+  transition: all 0.2s;
+}
+
+header h2 span {
+  color: #455A6B;
+  text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
+  padding: 0 9px;
+}
+
+header h2 span:hover {
+  color: #fff;
+  text-shadow: 2px 2px 10px #455A6B;
+  transition: all 0.2s;
+}
+
+header {
+  background-color: #50A8EB;
+  font-family: "Balthazar", serif;
+  font-weight: bold;
 }
 
 footer {
@@ -25,37 +68,6 @@ footer ul {
   text-shadow: 2px 2px 2px #455A6B;
 }
 
-header {
-  background-color: #50A8EB;
-  font-family: "Balthazar", serif;
-  font-weight: bold;
-}
-
-header h2.logo {
-  justify-content: center;
-  color: #fff;
-  text-shadow: 2px 2px 10px #455A6B;
-  padding: 0 5px;
-}
-
-header h2.logo:hover {
-  color: #3E83B8;
-  text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
-  transition: all 0.2s;
-}
-
-header h2 span {
-  color: #3E83B8;
-  text-shadow: 0px 0px 3px #fff, 2px 2px 10px #455A6B, 0px 0px 3px #fff, 0px 0px 3px #fff;
-  padding: 0 9px;
-}
-
-header h2 span:hover {
-  color: #fff;
-  text-shadow: 2px 2px 10px #455A6B;
-  transition: all 0.2s;
-}
-
 nav ul li {
   list-style-type: none;
   font-size: 20px;
@@ -64,7 +76,7 @@ nav ul li {
 }
 
 article.contacto .contacto__form .item {
-  background: #fff;
+  background: #1e252c;
   border: 2px solid #000;
   border-width: 8px;
   border-color: #50A8EB;
@@ -73,6 +85,7 @@ article.contacto .contacto__form .item {
   font-family: "Balthazar", serif;
   font-size: 25px;
   transition: all 0.2s;
+  padding: 0 7px;
 }
 
 article.contacto .contacto__form .item:focus {
@@ -90,13 +103,13 @@ article.contacto .contacto__form .item:last-child:hover {
   background: #455A6B;
   color: #fff;
   transition: all 0.2s;
-  border-color: #fff;
+  border-color: #1e252c;
   transform: scale(1.03);
 }
 
 main.cv aside.cv p {
-  max-width: 400px;
-  padding: 20px;
+  max-width: 509px;
+  padding: 6px;
   font-size: 20px;
   color: #98C8ED;
   font-family: "Balthazar", serif;
@@ -115,13 +128,34 @@ main.home aside.home p {
 }
 
 main.home article.home div {
-  background-color: #fff;
+  background-color: #1e252c;
   margin: 30px;
   padding: 5px;
   border-radius: 50%;
   box-shadow: 0px 0px 7px rgb(173, 216, 230);
   animation: borderAnimation 6s infinite;
   animation-timing-function: linear;
+}
+
+main.home .card {
+  margin: 0 30px 60px 30px;
+  border: 2px #fff solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px lightblue;
+  color: #98C8ED;
+  background: #455A6B;
+}
+
+main.home .card-img-top {
+  border-radius: 10px;
+  object-fit: contain;
+  background: radial-gradient(circle at center, rgb(250, 250, 250) 0%, rgb(150, 150, 150) 90%);
+}
+
+main.home .container {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0 0 0;
 }
 
 article.servicios {
@@ -151,7 +185,7 @@ a:focus {
 }
 
 .background {
-  background: radial-gradient(circle at left, #999 0%, #455A6B 90%);
+  background: radial-gradient(circle at 0 0, #455A6B 0%, #222 90%);
 }
 @media screen and (max-width: 729px) {
   .background {
@@ -164,7 +198,7 @@ a:focus {
   .background {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 110px repeat(9, 1fr);
+    grid-template-rows: 80px repeat(9, 1fr);
     flex-basis: 100vw;
   }
 }
@@ -172,7 +206,7 @@ a:focus {
   .background {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 110px repeat(7, 1fr);
+    grid-template-rows: 80px repeat(7, 1fr);
     min-height: 80vh;
   }
 }
@@ -228,7 +262,7 @@ a:focus {
 }
 
 h1 {
-  padding: 20px 0;
+  padding: 10px 0;
   background: #333;
 }
 @media screen and (max-width: 729px) {
@@ -253,7 +287,7 @@ h1 {
     grid-column: 1/13;
     grid-row: 1/2;
     justify-content: center;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 
@@ -268,7 +302,7 @@ header {
   }
   header h2.logo {
     display: flex;
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
@@ -279,7 +313,7 @@ header {
   }
   header h2.logo {
     display: flex;
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -289,7 +323,7 @@ header {
   }
   header h2.logo {
     display: flex;
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
@@ -306,6 +340,9 @@ header {
   nav ul li {
     padding: 5px 15px;
     display: flex;
+  }
+  nav .navbar-brand {
+    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
@@ -324,6 +361,9 @@ header {
   }
   nav #navbarNav {
     justify-content: flex-end;
+  }
+  nav .navbar-brand {
+    padding-left: 2em;
   }
 }
 @media screen and (min-width: 992px) {
@@ -344,12 +384,12 @@ header {
   }
 }
 
-main.home {
-  background: radial-gradient(circle at left, #999 0%, #455A6B 90%);
+.navbar {
+  padding: 0;
 }
-main.home h3 {
-  padding: 20px 0;
-  background: #333;
+
+main.home {
+  background: radial-gradient(circle at 0 0, #455A6B 0%, #222 90%);
 }
 @media screen and (max-width: 729px) {
   main.home {
@@ -382,28 +422,20 @@ main.home h3 {
   }
   main.home .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+    max-width: 729px;
+    padding: 0;
   }
   main.home .card {
-    margin-bottom: 60px;
-    width: 300px;
-    height: 500px;
-    border: 2px #fff solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px lightblue;
+    width: 243px;
+    height: 470px;
   }
   main.home .card-body {
     height: 300px;
     overflow: auto;
   }
   main.home .card-img-top {
-    width: 296px;
-    height: 200px;
-    border-radius: 10px;
-    object-fit: contain;
-    background: radial-gradient(circle at center, rgb(250, 250, 250) 0%, rgb(150, 150, 150) 90%);
+    width: 239px;
+    height: 160px;
   }
   main.home .card-title {
     text-align: center;
@@ -439,22 +471,15 @@ main.home h3 {
   }
   main.home h3 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
   }
   main.home .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 60px 0 0 0;
     max-width: 991px;
   }
   main.home .card {
-    margin: 0 60px 60px 60px;
     width: 300px;
-    height: 500px;
-    border: 2px #fff solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px lightblue;
+    height: 450px;
   }
   main.home .card-body {
     height: 300px;
@@ -463,9 +488,6 @@ main.home h3 {
   main.home .card-img-top {
     width: 296px;
     height: 200px;
-    border-radius: 10px;
-    object-fit: contain;
-    background: radial-gradient(circle at center, rgb(250, 250, 250) 0%, rgb(150, 150, 150) 90%);
   }
   main.home .card-title {
     text-align: center;
@@ -475,7 +497,7 @@ main.home h3 {
   main.home {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 110px 500px 110px 1fr;
+    grid-template-rows: 80px 500px 80px 1fr;
     min-height: 100vh;
   }
   main.home article.home {
@@ -508,26 +530,18 @@ main.home h3 {
     text-align: center;
     grid-column: 1/13;
     grid-row: 3/4;
-    font-size: 3em;
+    font-size: 2.5em;
   }
   main.home .container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 30px;
     grid-column: 1/13;
     grid-row: 4/5;
-    justify-content: center;
     max-width: none;
   }
   main.home .card {
-    margin: 0 30px 60px 30px;
     min-width: 300px;
     width: 300px;
-    height: 500px;
-    border: 2px #fff solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px lightblue;
+    height: 450px;
   }
   main.home .card-body {
     height: 300px;
@@ -536,9 +550,6 @@ main.home h3 {
   main.home .card-img-top {
     width: 296px;
     height: 200px;
-    border-radius: 10px;
-    object-fit: contain;
-    background: radial-gradient(circle at center, rgb(250, 250, 250) 0%, rgb(150, 150, 150) 90%);
   }
   main.home .card-title {
     text-align: center;
@@ -572,6 +583,7 @@ main.home h3 {
     justify-content: center;
     grid-column: 1/13;
     grid-row: 2/7;
+    padding-top: 20px;
   }
   main.cv article.cv img {
     object-fit: contain;
@@ -584,6 +596,7 @@ main.home h3 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 20px 0;
   }
   main.cv aside.cv p {
     display: flex;
@@ -596,7 +609,11 @@ main.home h3 {
     grid-row: 2/9;
     justify-content: center;
     padding: 20px 20px;
-    flex-grow: 4;
+  }
+  main.cv article.cv img {
+    object-fit: contain;
+    max-width: 500px;
+    min-width: 450px;
   }
   main.cv aside.cv {
     display: flex;
@@ -606,7 +623,6 @@ main.home h3 {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    flex-grow: 1;
   }
   main.cv aside.cv p {
     display: flex;
@@ -627,6 +643,7 @@ main.home h3 {
   article.contacto .contacto__form .item {
     min-width: 280px;
     margin: 10px 0;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
@@ -682,12 +699,7 @@ main.home h3 {
 }
 
 main.hobbies {
-  background: radial-gradient(circle at left, #999 0%, #455A6B 90%);
-}
-main.hobbies h3, main.hobbies h4 {
-  padding: 20px 0;
-  background: #333;
-  width: 100%;
+  background: radial-gradient(circle at 0 0, #455A6B 0%, #222 90%);
 }
 main.hobbies ul {
   list-style-type: none;
@@ -712,7 +724,7 @@ main.hobbies ul {
   main.hobbies {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 110px 1fr;
+    grid-template-rows: 80px 1fr;
     min-height: 100vh;
   }
   main.hobbies article.hobbies {
@@ -736,7 +748,7 @@ main.hobbies ul {
   main.hobbies {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 110px 1fr;
+    grid-template-rows: 80px 1fr;
     min-height: 100vh;
   }
   main.hobbies article.hobbies {

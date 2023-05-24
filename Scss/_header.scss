@@ -23,7 +23,7 @@ header {
     
         h2.logo {
             display: flex;
-            font-size: 45px;
+            font-size: 40px;
         }        
     }
     @include tablet {
@@ -33,7 +33,7 @@ header {
         
         h2.logo {
             display: flex;
-            font-size: 60px;
+            font-size: 40px;
         }
     }
     @include desktop {
@@ -42,7 +42,7 @@ header {
         
         h2.logo {
             display: flex;
-            font-size: 60px;
+            font-size: 40px;
         }
     }
 }

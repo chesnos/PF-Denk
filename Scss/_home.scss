@@ -1,5 +1,5 @@
 main.home {   
-    background: radial-gradient(circle at left , #999 0%, #455A6B 90%);
+    background: $background-gradient-fondo;
     aside.home p {
         @extend %aside-home-p;
     }
@@ -7,9 +7,16 @@ main.home {
         @extend %article-home-div;
     }
     h3 {
-        @extend %h1;
-        padding: 20px 0;
-        background: #333;
+        @extend %h3-h4;
+    }
+    .card {
+        @extend %card-home;
+    }
+    .card-img-top {
+        @extend %card-home-img-top;
+    }
+    .container {
+        @extend %container-home;
     }
     @include mobile {
         display: flex;
@@ -44,17 +51,12 @@ main.home {
         }
         .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 30px;
+            max-width: 729px;
+            padding: 0;
         }
         .card {
-            margin-bottom: 60px;
-            width: 300px;
-            height: 500px;
-            border: 2px #fff solid;
-            border-radius: 10px;
-            box-shadow: 0px 0px 8px lightblue;
+            width: 243px;
+            height: 470px;
         }
         .card-body {
             height: 300px;
@@ -62,11 +64,8 @@ main.home {
         }
         
         .card-img-top {
-            width: 296px;
-            height: 200px;
-            border-radius: 10px;
-            object-fit: contain;
-            background: radial-gradient(circle at center, rgb(250, 250, 250) 0%, rgb(150, 150, 150) 90%);
+            width: 239px;
+            height: 160px;
         }
         .card-title {
             text-align: center;
@@ -103,22 +102,15 @@ main.home {
         } 
         h3 {
             text-align: center;
-            font-size: 3em;
+            font-size: 2.5em;
         }
         .container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 60px 0 0 0;
             max-width: 991px;
         }
         .card {
-            margin: 0 60px 60px 60px;
             width: 300px;
-            height: 500px;
-            border: 2px #fff solid;
-            border-radius: 10px;
-            box-shadow: 0px 0px 8px lightblue;
+            height: 450px;
         }
         .card-body {
             height: 300px;
@@ -128,9 +120,6 @@ main.home {
         .card-img-top {
             width: 296px;
             height: 200px;
-            border-radius: 10px;
-            object-fit: contain;
-            background: radial-gradient(circle at center, rgb(250, 250, 250) 0%, rgb(150, 150, 150) 90%);
         }
         .card-title {
             text-align: center;
@@ -139,7 +128,7 @@ main.home {
     @include desktop {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 110px 500px 110px 1fr;
+        grid-template-rows: 80px 500px 80px 1fr;
         min-height: 100vh;
 
         article.home {
@@ -175,26 +164,18 @@ main.home {
             text-align: center;
             grid-column: 1/13;
             grid-row: 3/4;
-            font-size: 3em;
+            font-size: 2.5em;
         }
         .container {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 30px;
             grid-column: 1/13;
             grid-row: 4/5;
-            justify-content: center;
             max-width: none;
         }
         .card {
-            margin: 0 30px 60px 30px;
             min-width: 300px;
             width: 300px;
-            height: 500px;
-            border: 2px #fff solid;
-            border-radius: 10px;
-            box-shadow: 0px 0px 8px lightblue;
+            height: 450px;
         }
         .card-body {
             height: 300px;
@@ -204,9 +185,6 @@ main.home {
         .card-img-top {
             width: 296px;
             height: 200px;
-            border-radius: 10px;
-            object-fit: contain;
-            background: radial-gradient(circle at center, rgb(250, 250, 250) 0%, rgb(150, 150, 150) 90%);
         }
         .card-title {
             text-align: center;

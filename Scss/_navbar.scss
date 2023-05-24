@@ -15,6 +15,9 @@ nav {
                 padding: 5px 15px;
                 display: flex;
             }
+        }
+        .navbar-brand {
+            padding-left: 1rem;
         }    
     }
     @include tablet {
@@ -34,6 +37,9 @@ nav {
         #navbarNav {
             justify-content: flex-end;
         }
+        .navbar-brand {
+            padding-left: 2em;
+        }
     }
     @include desktop {
         display: flex;
@@ -51,4 +57,7 @@ nav {
             justify-content: flex-end;
         }
     }
+}
+.navbar {
+    padding: 0;
 }

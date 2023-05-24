@@ -1,5 +1,5 @@
 main.hobbies {
-    background: radial-gradient(circle at left , #999 0%, #455A6B 90%);
+    background: $background-gradient-fondo;
     article.hobbies p {
         @extend %hobbies-p;
     }
@@ -7,10 +7,7 @@ main.hobbies {
         @extend %hobbies-p;
     }
     h3, h4 {
-        @extend %h1;
-        padding: 20px 0;
-        background: #333;
-        width: 100%;
+        @extend %h3-h4;
     }
     ul {
         list-style-type: none;
@@ -35,7 +32,7 @@ main.hobbies {
     @include tablet {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 110px 1fr ;
+        grid-template-rows: 80px 1fr ;
         min-height: 100vh;
         article.hobbies {
             display: flex;
@@ -58,7 +55,7 @@ main.hobbies {
     @include desktop {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 110px 1fr ;
+        grid-template-rows: 80px 1fr ;
         min-height: 100vh;
         article.hobbies {
             display: flex;
