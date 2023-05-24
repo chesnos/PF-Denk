@@ -361,6 +361,7 @@ header {
   }
   nav #navbarNav {
     justify-content: flex-end;
+    margin-right: 2em;
   }
   nav .navbar-brand {
     padding-left: 2em;
@@ -376,11 +377,12 @@ header {
     padding-left: 2em;
   }
   nav ul li {
-    padding: 20px;
+    padding: 5px;
     display: flex;
   }
   nav #navbarNav {
     justify-content: flex-end;
+    margin-right: 2em;
   }
 }
 

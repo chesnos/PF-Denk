@@ -36,6 +36,7 @@ nav {
         }
         #navbarNav {
             justify-content: flex-end;
+            margin-right: 2em;
         }
         .navbar-brand {
             padding-left: 2em;
@@ -50,11 +51,12 @@ nav {
             padding-left: 2em;
         }
         ul li {
-            padding: 20px;
+            padding: 5px;
             display: flex;
         }
         #navbarNav {
             justify-content: flex-end;
+            margin-right: 2em;
         }
     }
 }
