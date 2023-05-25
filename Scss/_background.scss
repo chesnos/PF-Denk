@@ -8,13 +8,13 @@
     @include tablet {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 80px repeat(9, 1fr) ;
+        grid-template-rows: 60px repeat(9, 1fr) ;
         flex-basis: 100vw;
     }
     @include desktop {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 80px repeat(7, 1fr);
+        grid-template-rows: 60px repeat(7, 1fr);
         min-height: 80vh;
     }
 }

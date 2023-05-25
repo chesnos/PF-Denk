@@ -4,6 +4,7 @@
     color: $h1-letra-color;
     font-family: $font-letra;
     text-shadow: $h1-text-shadow;
+    margin-bottom: 0;
 }
 %h3-h4 {
     font-weight: 400;
@@ -11,10 +12,8 @@
     color: $h1-letra-color;
     font-family: $font-letra;
     text-shadow: $h1-text-shadow;
-    padding: 10px 0;
     background: #333;
     width: 100%;
-    font-size: 2.5em;
 }
 %h2-logo {
     justify-content: center;
@@ -133,7 +132,6 @@
     padding: 0;
 }
 %article-servicios {
-    font-size: 20px;
     color: $background-color-letra;
     font-family: $font-letra;
 }

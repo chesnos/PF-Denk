@@ -11,6 +11,7 @@ h1 {
   color: #eee;
   font-family: "Balthazar", serif;
   text-shadow: 0px 0px 4px rgb(173, 216, 230);
+  margin-bottom: 0;
 }
 
 main.hobbies h3, main.hobbies h4, main.home h3 {
@@ -19,10 +20,8 @@ main.hobbies h3, main.hobbies h4, main.home h3 {
   color: #eee;
   font-family: "Balthazar", serif;
   text-shadow: 0px 0px 4px rgb(173, 216, 230);
-  padding: 10px 0;
   background: #333;
   width: 100%;
-  font-size: 2.5em;
 }
 
 header h2.logo {
@@ -161,7 +160,6 @@ main.home .container {
 }
 
 article.servicios {
-  font-size: 20px;
   color: #98C8ED;
   font-family: "Balthazar", serif;
 }
@@ -200,7 +198,7 @@ a:focus {
   .background {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px repeat(9, 1fr);
+    grid-template-rows: 60px repeat(9, 1fr);
     flex-basis: 100vw;
   }
 }
@@ -208,7 +206,7 @@ a:focus {
   .background {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px repeat(7, 1fr);
+    grid-template-rows: 60px repeat(7, 1fr);
     min-height: 80vh;
   }
 }
@@ -252,6 +250,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 2em;
+    padding: 5px 10px;
   }
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
@@ -260,7 +259,7 @@ h1 {
     grid-column: 1/13;
     grid-row: 1/2;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 992px) {
@@ -269,7 +268,7 @@ h1 {
     grid-column: 1/13;
     grid-row: 1/2;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
@@ -404,6 +403,10 @@ main.home {
     width: 80vw;
     font-size: 1.2em;
   }
+  main.home h3 {
+    font-size: 2em;
+    padding: 5px 10px;
+  }
   main.home .container {
     display: flex;
     max-width: 729px;
@@ -454,7 +457,8 @@ main.home {
   }
   main.home h3 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
+    line-height: 1.8;
   }
   main.home .container {
     display: flex;
@@ -480,7 +484,7 @@ main.home {
   main.home {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px 500px 80px 1fr;
+    grid-template-rows: 60px 500px 60px 1fr;
     min-height: 100vh;
   }
   main.home article.home {
@@ -513,7 +517,8 @@ main.home {
     text-align: center;
     grid-column: 1/13;
     grid-row: 3/4;
-    font-size: 2.5em;
+    font-size: 2em;
+    line-height: 1.8;
   }
   main.home .container {
     display: flex;
@@ -697,17 +702,22 @@ main.hobbies ul {
   main.hobbies article.hobbies iframe {
     display: flex;
     width: 95%;
+    margin: 10px 5%;
   }
   main.hobbies article.hobbies p {
     display: flex;
-    padding: 10px;
+    padding: 10px 5%;
+  }
+  main.hobbies h3, main.hobbies h4 {
+    font-size: 2em;
+    padding: 5px 10px;
   }
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
   main.hobbies {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 60px 1fr;
     min-height: 100vh;
   }
   main.hobbies article.hobbies {
@@ -720,18 +730,22 @@ main.hobbies ul {
   }
   main.hobbies article.hobbies iframe {
     display: flex;
-    width: 93vw;
+    width: 95%;
+    margin: 10px 5%;
   }
   main.hobbies article.hobbies p {
     display: flex;
-    width: 80vw;
+    padding: 10px 10%;
+  }
+  main.hobbies article.hobbies h3, main.hobbies article.hobbies h4 {
+    line-height: 1.8;
   }
 }
 @media screen and (min-width: 992px) {
   main.hobbies {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 60px 1fr;
     min-height: 100vh;
   }
   main.hobbies article.hobbies {
@@ -744,169 +758,93 @@ main.hobbies ul {
   }
   main.hobbies article.hobbies iframe {
     display: flex;
-    width: 93vw;
-    margin-bottom: 10px;
+    width: 95%;
+    margin: 10px 5%;
   }
   main.hobbies article.hobbies p {
     display: flex;
-    width: 80vw;
+    padding: 10px 15%;
+  }
+  main.hobbies article.hobbies h3, main.hobbies article.hobbies h4 {
+    line-height: 1.8;
   }
 }
 
-article.servicios div.servicios__img {
+main.servicios {
+  background: radial-gradient(circle at 0 0, #455A6B 0%, #222 90%);
+}
+
+article.servicios {
   justify-content: center;
 }
-article.servicios div.servicios__h2 {
-  justify-content: center;
-}
-article.servicios div.servicios__p {
+article.servicios div.servicios__card {
+  display: flex;
   text-align: center;
 }
 @media screen and (max-width: 729px) {
   article.servicios {
     display: flex;
-    flex-direction: column;
-  }
-  article.servicios div.img__1 {
-    display: flex;
-  }
-  article.servicios div.img__2 {
-    display: flex;
-  }
-  article.servicios div.img__3 {
-    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1em;
   }
   article.servicios div.servicios__img img {
     display: flex;
-    width: 300px;
-    margin: 20px;
+    width: 243px;
+    margin: 20px 0;
   }
-  article.servicios div.servicios__h2 {
-    display: flex;
-    padding: 10px 0;
+  article.servicios div.servicios__card {
+    flex-direction: column;
+    width: 243px;
+    margin: 0 20px;
+    height: 350px;
+    justify-content: space-between;
+  }
+  article.servicios div.servicios__card h2 {
+    font-size: 1.6em;
   }
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
   article.servicios {
-    display: grid;
-    grid-column: 1/13;
-    grid-row: 2/11;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 300px 60px 2fr 300pxr 60px 1fr;
-  }
-  article.servicios div.img__1 {
     display: flex;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    align-items: center;
-  }
-  article.servicios div.img__2 {
-    display: flex;
-    grid-column: 3/5;
-    grid-row: 1/2;
-    align-items: center;
-  }
-  article.servicios div.img__3 {
-    display: flex;
-    grid-column: 2/4;
-    grid-row: 4/5;
-    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.3em;
   }
   article.servicios div.servicios__img img {
-    margin: 20px;
     display: flex;
     width: 300px;
+    margin: 20px 0;
   }
-  article.servicios div.h2__1 {
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 2/3;
+  article.servicios div.servicios__card {
+    flex-direction: column;
+    width: 300px;
+    margin: 0 20px;
+    height: 400px;
+    justify-content: space-between;
   }
-  article.servicios div.h2__2 {
-    display: flex;
-    grid-column: 3/5;
-    grid-row: 2/3;
-  }
-  article.servicios div.h2__3 {
-    display: flex;
-    grid-column: 2/4;
-    grid-row: 5/6;
-  }
-  article.servicios div.p__1 {
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 3/4;
-  }
-  article.servicios div.p__2 {
-    display: flex;
-    grid-column: 3/5;
-    grid-row: 3/4;
-  }
-  article.servicios div.p__3 {
-    display: flex;
-    grid-column: 2/4;
-    grid-row: 6/7;
+  article.servicios div.servicios__card h2 {
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 992px) {
   article.servicios {
-    display: grid;
-    grid-column: 1/13;
-    grid-row: 2/9;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 300px 60px 120px;
-  }
-  article.servicios div.img__1 {
     display: flex;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    align-items: center;
-  }
-  article.servicios div.img__2 {
-    display: flex;
-    grid-column: 3/5;
-    grid-row: 1/2;
-    align-items: center;
-  }
-  article.servicios div.img__3 {
-    display: flex;
-    grid-column: 5/7;
-    grid-row: 1/2;
-    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.4em;
   }
   article.servicios div.servicios__img img {
     display: flex;
-    width: 300px;
+    width: 350px;
+    margin: 20px 0;
   }
-  article.servicios div.h2__1 {
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 2/3;
+  article.servicios div.servicios__card {
+    flex-direction: column;
+    width: 350px;
+    margin: 0 20px;
+    height: 450px;
+    justify-content: space-between;
   }
-  article.servicios div.h2__2 {
-    display: flex;
-    grid-column: 3/5;
-    grid-row: 2/3;
-  }
-  article.servicios div.h2__3 {
-    display: flex;
-    grid-column: 5/7;
-    grid-row: 2/3;
-  }
-  article.servicios div.p__1 {
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 3/4;
-  }
-  article.servicios div.p__2 {
-    display: flex;
-    grid-column: 3/5;
-    grid-row: 3/4;
-  }
-  article.servicios div.p__3 {
-    display: flex;
-    grid-column: 5/7;
-    grid-row: 3/4;
+  article.servicios div.servicios__card h2 {
+    font-size: 1.6em;
   }
 }
 
