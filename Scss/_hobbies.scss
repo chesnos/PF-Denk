@@ -35,10 +35,10 @@ main.hobbies {
         }    
     }
     @include tablet {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 60px 1fr ;
-        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        min-height: 90vh;
+        
         article.hobbies {
             display: flex;
             flex-direction: column;
@@ -62,15 +62,13 @@ main.hobbies {
         }
     }
     @include desktop {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 60px 1fr ;
-        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        min-height: 90vh;
+
         article.hobbies {
             display: flex;
             flex-direction: column;
-            grid-column: 1/13;
-            grid-row: 2/3;
             align-items: center;
             justify-content: space-evenly;
 

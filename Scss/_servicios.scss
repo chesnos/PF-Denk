@@ -37,7 +37,9 @@ article.servicios {
     @include tablet {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         font-size: 1.3em;
+        min-height: 85.8vh;
 
         div.servicios__img img {
             display: flex;
@@ -59,7 +61,9 @@ article.servicios {
     @include desktop {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         font-size: 1.4em;
+        min-height: 85.8vh;
 
         div.servicios__img img {
             display: flex;

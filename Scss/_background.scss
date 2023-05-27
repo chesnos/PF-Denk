@@ -3,18 +3,26 @@
     @include mobile {
         display: flex;
         flex-direction: column;
-        flex-basis: 100vw;
+        min-height: 90vh;
     }
     @include tablet {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 60px repeat(9, 1fr) ;
-        flex-basis: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: 90vh;
+
+        h1 {
+            height: 60px;
+        }
     }
     @include desktop {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 60px repeat(7, 1fr);
-        min-height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: 90vh;
+
+        h1 {
+            height: 60px;
+        }
     }
 }

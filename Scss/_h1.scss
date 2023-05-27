@@ -10,16 +10,14 @@ h1 {
     }
     @include tablet {
         display: flex;
-        grid-column: 1/13;
-        grid-row: 1/2;
         justify-content: center;
+        width: 100%;
         font-size: 2em;
     }
     @include desktop {
         display: flex;
-        grid-column: 1/13;
-        grid-row: 1/2;
         justify-content: center;
+        width: 100%;
         font-size: 2em;
     }
 }

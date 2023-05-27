@@ -21,7 +21,6 @@ main.home {
     @include mobile {
         display: flex;
         flex-direction: column;
-        flex-basis: 100vw; 
 
         article.home {
             display: flex;
@@ -67,15 +66,14 @@ main.home {
         }
         
         .card-img-top {
-            width: 239px;
-            height: 160px;
+            max-width: 239px;
+            max-height: 160px;
         }
         .card-title {
             text-align: center;
         } 
     }   
     @include tablet {
-        flex-basis: 100vw;
         article.home {
             display: flex;
             justify-content: center;
@@ -133,8 +131,12 @@ main.home {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 60px 500px 60px 1fr;
-        min-height: 100vh;
+        min-height: 90vh;
 
+        h1{
+            grid-column: 1 / 13;
+            grid-row: 1 / 2;
+        }
         article.home {
             display: flex;
             justify-content: center;
@@ -145,7 +147,7 @@ main.home {
             div {
                 display: flex;
                 align-content: center;
-                height: 60vh;
+                height: 400px;
             
                 img {
                     border-radius: 50%;

@@ -33,15 +33,15 @@ article.contacto {
     }
     @include tablet {
         display: flex;
-        grid-column: 1 / 13;
-        grid-row: 2 / 11;
         justify-content: center;
-        
+        align-items: start;
+
         .contacto__form {
             display: grid;
-            grid-template-columns: .5fr 1fr;
-            grid-template-rows: repeat(3, 2fr) 2.5fr; 
-            //grid-gap: 120px;
+            //grid-template-columns: .5fr 1fr;
+            //grid-template-rows: repeat(3, 2fr) 2.5fr;
+            grid-template-columns: 200px 300px;
+            grid-template-rows: repeat(3, 50px) 60px;
             padding: 50px;
             grid-gap: 100px;
             align-content: center;
@@ -59,14 +59,15 @@ article.contacto {
     }
     @include desktop {
         display: flex;
-        grid-column: 1 / 13;
-        grid-row: 2 / 9;
         justify-content: center;
+        align-items: start;
         
         .contacto__form {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            grid-template-rows: repeat(3, .2fr) .4fr;
+            //grid-template-columns: 1fr 1.2fr;
+            //grid-template-rows: repeat(3, .2fr) .4fr;
+            grid-template-columns: 300px 360px;
+            grid-template-rows: repeat(3, 60px) 80px;
             padding: 50px;
             grid-gap: 100px;
             align-content: center;

@@ -12,7 +12,7 @@ main.cv {
         
             img {
                 object-fit: contain;
-                min-width: 300px;
+                min-width: 270px;
             }
         }    
         aside.cv {
@@ -55,6 +55,8 @@ main.cv {
         }
     }
     @include desktop {
+        align-items: start;
+        
         article.cv {
             display: flex;
             grid-column: 1 / 7;

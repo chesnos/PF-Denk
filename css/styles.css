@@ -191,24 +191,34 @@ a:focus {
   .background {
     display: flex;
     flex-direction: column;
-    flex-basis: 100vw;
+    min-height: 90vh;
   }
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
   .background {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60px repeat(9, 1fr);
-    flex-basis: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 90vh;
+  }
+  .background h1 {
+    height: 60px;
   }
 }
 @media screen and (min-width: 992px) {
   .background {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60px repeat(7, 1fr);
-    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 90vh;
   }
+  .background h1 {
+    height: 60px;
+  }
+}
+
+body {
+  background: #3E83B8;
 }
 
 @keyframes borderAnimation {
@@ -256,18 +266,16 @@ h1 {
 @media screen and (min-width: 730px) and (max-width: 991px) {
   h1 {
     display: flex;
-    grid-column: 1/13;
-    grid-row: 1/2;
     justify-content: center;
+    width: 100%;
     font-size: 2em;
   }
 }
 @media screen and (min-width: 992px) {
   h1 {
     display: flex;
-    grid-column: 1/13;
-    grid-row: 1/2;
     justify-content: center;
+    width: 100%;
     font-size: 2em;
   }
 }
@@ -378,7 +386,6 @@ main.home {
   main.home {
     display: flex;
     flex-direction: column;
-    flex-basis: 100vw;
   }
   main.home article.home {
     display: flex;
@@ -420,17 +427,14 @@ main.home {
     overflow: auto;
   }
   main.home .card-img-top {
-    width: 239px;
-    height: 160px;
+    max-width: 239px;
+    max-height: 160px;
   }
   main.home .card-title {
     text-align: center;
   }
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
-  main.home {
-    flex-basis: 100vw;
-  }
   main.home article.home {
     display: flex;
     justify-content: center;
@@ -485,7 +489,11 @@ main.home {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 60px 500px 60px 1fr;
-    min-height: 100vh;
+    min-height: 90vh;
+  }
+  main.home h1 {
+    grid-column: 1/13;
+    grid-row: 1/2;
   }
   main.home article.home {
     display: flex;
@@ -497,7 +505,7 @@ main.home {
   main.home article.home div {
     display: flex;
     align-content: center;
-    height: 60vh;
+    height: 400px;
   }
   main.home article.home div img {
     border-radius: 50%;
@@ -552,7 +560,7 @@ main.home {
   }
   main.cv article.cv img {
     object-fit: contain;
-    min-width: 300px;
+    min-width: 270px;
   }
   main.cv aside.cv {
     display: flex;
@@ -591,6 +599,9 @@ main.home {
   }
 }
 @media screen and (min-width: 992px) {
+  main.cv {
+    align-items: start;
+  }
   main.cv article.cv {
     display: flex;
     grid-column: 1/7;
@@ -637,14 +648,13 @@ main.home {
 @media screen and (min-width: 730px) and (max-width: 991px) {
   article.contacto {
     display: flex;
-    grid-column: 1/13;
-    grid-row: 2/11;
     justify-content: center;
+    align-items: start;
   }
   article.contacto .contacto__form {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: repeat(3, 2fr) 2.5fr;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: repeat(3, 50px) 60px;
     padding: 50px;
     grid-gap: 100px;
     align-content: center;
@@ -662,14 +672,13 @@ main.home {
 @media screen and (min-width: 992px) {
   article.contacto {
     display: flex;
-    grid-column: 1/13;
-    grid-row: 2/9;
     justify-content: center;
+    align-items: start;
   }
   article.contacto .contacto__form {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    grid-template-rows: repeat(3, 0.2fr) 0.4fr;
+    grid-template-columns: 300px 360px;
+    grid-template-rows: repeat(3, 60px) 80px;
     padding: 50px;
     grid-gap: 100px;
     align-content: center;
@@ -715,10 +724,9 @@ main.hobbies ul {
 }
 @media screen and (min-width: 730px) and (max-width: 991px) {
   main.hobbies {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60px 1fr;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
   }
   main.hobbies article.hobbies {
     display: flex;
@@ -743,16 +751,13 @@ main.hobbies ul {
 }
 @media screen and (min-width: 992px) {
   main.hobbies {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60px 1fr;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
   }
   main.hobbies article.hobbies {
     display: flex;
     flex-direction: column;
-    grid-column: 1/13;
-    grid-row: 2/3;
     align-items: center;
     justify-content: space-evenly;
   }
@@ -807,7 +812,9 @@ article.servicios div.servicios__card {
   article.servicios {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     font-size: 1.3em;
+    min-height: 85.8vh;
   }
   article.servicios div.servicios__img img {
     display: flex;
@@ -829,7 +836,9 @@ article.servicios div.servicios__card {
   article.servicios {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     font-size: 1.4em;
+    min-height: 85.8vh;
   }
   article.servicios div.servicios__img img {
     display: flex;
